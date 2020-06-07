@@ -1,101 +1,146 @@
 /* CSS Main */
 
 :root {
-    --lights-off:10%;
-    --lights-on:50%;
-    --blue:240;
-    --red:360;
-    --green:120;
-    --cyan:180;
-    --yellow:60;
-    --purple:270;
-    --transition-time: 0.3s;
+  --lights-off:10%;
+  --lights-on:50%;
+  --blue:240;
+  --red:360;
+  --green:120;
+  --cyan:180;
+  --yellow:60;
+  --purple:270;
+  --transition-time: 0.3s;
+  
+}
+
+html, body {
+  height: 100%;
+  display: grid;
+  'Roboto', sans-serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.light-row {
+  display: flex;
+  margin: auto; // center stuff
+ }
+
+.light {
+  height: 300px;
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 150px;
+  margin: 0 5px;
+}
+
+#light-1 {
+  background-color: hsla(var(--blue), 100%, var(--lights-off), 1);
+  transition: var(--transition-time);
+}
+
+#light-2 {
+ background-color: hsla(var(--red), 100%, var(--lights-off), 1);
+  transition: var(--transition-time);
+}
+
+#light-3 {
+  background-color: hsla(var(--green), 100%, var(--lights-off), 1);
+  transition: var(--transition-time);
+}
+
+#light-4 {
+  background-color: hsla(var(--cyan), 100%, var(--lights-off), 1);
+  transition: var(--transition-time);
+}
+
+#light-5 {
+  background-color: hsla(var(--yellow), 100%, var(--lights-off), 1);
+  transition: var(--transition-time);
+}
+
+#light-6 {
+  background-color: hsla(var(--purple), 100%, var(--lights-off), 1);
+  transition: var(--transition-time);
+}
+
+.controls {
+  display: grid;
+  margin: auto;
+}
+
+.controls > * {
+  margin: 10px 0;
+}
+
+#light-switch {
+  border: none;
+  padding: 10px;
+  font-size: 25px;
+  transition: 0.3s;
+}
+
+#light-switch:hover {
+  background-color: hsla(var(--yellow), 100%, var(--lights-on), 1);
+}
+
+#light-mode {
+  display: flex;
+  justify-content: center;
+}
+
+#light-mode-tag {
+  margin: 5px;
+}
+
+@media only screen
+  and (max-width: 1024px) {
     
+    .light-row {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .light {
+      height: 300px;
+      width: 300px;
+      border-radius: 150px;
+      margin: 5px 5px;
+    }
+}
+
+@media only screen
+  and (max-width: 768px) {
+
+    .light-row {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .light {
+      height: 240px;
+      width: 240px;
+      border-radius: 120px;
+      margin: 5px 5px;
+    }
   }
-  
-  html, body {
-    height: 100%;
-    display: grid;
-  }
-  
-  body {
-    background-color: black;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .light-row {
-    display: flex;
-    margin: auto; // center stuff
-   }
-  
-  .light {
-    height: 300px;
-    width: 300px;
-    border: 1px solid black;
-    border-radius: 150px;
-    margin: 0 5px;
-  }
-  
-  #light-1 {
-    background-color: hsla(var(--blue), 100%, var(--lights-off), 1);
-    transition: var(--transition-time);
-  }
-  
-  #light-2 {
-   background-color: hsla(var(--red), 100%, var(--lights-off), 1);
-    transition: var(--transition-time);
-  }
-  
-  #light-3 {
-    background-color: hsla(var(--green), 100%, var(--lights-off), 1);
-    transition: var(--transition-time);
-  }
-  
-  #light-4 {
-    background-color: hsla(var(--cyan), 100%, var(--lights-off), 1);
-    transition: var(--transition-time);
-  }
-  
-  #light-5 {
-    background-color: hsla(var(--yellow), 100%, var(--lights-off), 1);
-    transition: var(--transition-time);
-  }
-  
-  #light-6 {
-    background-color: hsla(var(--purple), 100%, var(--lights-off), 1);
-    transition: var(--transition-time);
-  }
-  
-  .controls {
-    display: grid;
-    margin: auto;
-  }
-  
-  .controls > * {
-    margin: 10px 0;
-  }
-  
-  #light-switch {
-    border: none;
-    padding: 10px;
-    font-size: 25px;
-    transition: 0.3s;
-  }
-  
-  #light-switch:hover {
-    background-color: hsla(var(--yellow), 100%, var(--lights-on), 1);
-  }
-  
-  #light-mode {
-    display: flex;
-    justify-content: center;
-  }
-  
-  #light-mode-tag {
-    margin: 5px;
-  }
-  
-  
-  
-  
+
+@media only screen
+  and (max-width: 480px) {
+    
+    .light-row {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .light {
+      height: 160px;
+      width: 160px;
+      border-radius: 80px;
+      margin: 5px 5px;
+    }
+}

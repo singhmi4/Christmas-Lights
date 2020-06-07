@@ -53,6 +53,30 @@ pulseMode.onchange = function() {
   }
 }
 
+// lightSwitch.addEventListener("click", function(){
+  
+//   if(areLightsOn == false) {
+    
+//   light1.style.backgroundColor = `hsla(${blueColor}, 100%, ${lightsOn}, 1)`;
+//     light2.style.backgroundColor = `hsla(${redColor}, 100%, ${lightsOn}, 1)`;
+//     light3.style.backgroundColor = `hsla(${greenColor}, 100%, ${lightsOn}, 1)`;
+//     light4.style.backgroundColor = `hsla(${cyanColor}, 100%, ${lightsOn}, 1)`;
+//     light5.style.backgroundColor = `hsla(${yellowColor}, 100%, ${lightsOn}, 1)`;
+//     light6.style.backgroundColor = `hsla(${purpleColor}, 100%, ${lightsOn}, 1)`;
+//     areLightsOn = true;
+//     this.innerHTML = "Turn Off Lights";
+//   } else {
+//     light1.style.backgroundColor = `hsla(240, 100%, ${lightsOff}, 1)`;
+//     light2.style.backgroundColor = `hsla(${redColor}, 100%, ${lightsOff}, 1)`;
+//     light3.style.backgroundColor = `hsla(${greenColor}, 100%, ${lightsOff}, 1)`;
+//     light4.style.backgroundColor = `hsla(${cyanColor}, 100%, ${lightsOff}, 1)`;
+//     light5.style.backgroundColor = `hsla(${yellowColor}, 100%, ${lightsOff}, 1)`;
+//     light6.style.backgroundColor = `hsla(${purpleColor}, 100%, ${lightsOff}, 1)`;
+//     areLightsOn = false;
+//     this.innerHTML = "Turn On Lights";
+//   }
+// });
+
 // Lights On Function
 
 function turnLightsOn() {
@@ -66,7 +90,7 @@ function turnLightsOn() {
 }
 
 function turnLightsOff() {
-   light1.style.backgroundColor = `hsla(240, 100%, ${lightsOff}, 1)`;
+   light1.style.backgroundColor = `hsla(${blueColor}, 100%, ${lightsOff}, 1)`;
     light2.style.backgroundColor = `hsla(${redColor}, 100%, ${lightsOff}, 1)`;
     light3.style.backgroundColor = `hsla(${greenColor}, 100%, ${lightsOff}, 1)`;
     light4.style.backgroundColor = `hsla(${cyanColor}, 100%, ${lightsOff}, 1)`;
