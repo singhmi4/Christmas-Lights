@@ -1,6 +1,14 @@
 # Christmas-Lights
 
-## Things to Do
+## Link
+https://singhmi4.github.io/Christmas-Lights/
 
-* More flicker modes
-* Make it responsive
+## Description
+Front-End demo of flickering Christmas light using Javascript and CSS Flexbox/Grid.
+
+## Technologies
+
+* CSS Grid
+* CSS Flexbox
+* Javascript (Native)
+* Google Fonts
